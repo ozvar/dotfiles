@@ -52,11 +52,11 @@ XTerm*geometry: 80x25
 
 URxvt.iconName:          urxvt
 URxvt.iconFile:          /usr/share/icons/Papirus-Dark/48x48/apps/urxvt.svg
-URxvt.internalBorder:    3
-URxvt.externalBorder:    12
+URxvt.internalBorder:    16
+!URxvt.externalBorder:   12
 URxvt.lineSpace:         1
 !URxvt*shading:          30
-URxvt.depth:             32
+URxvt.depth:             16
 URxvt.saveLines:         10000
 URxvt*geometry:          80x25
 URxvt*terminalName:      rxvt-unicode-256color
@@ -69,7 +69,7 @@ URxvt*scrollTtyOutput:   false
 URxvt*scrollWithBuffer:  true
 URxvt*scrollTtyKeypress: true
 URxvt*transparent: 	 true
-URxvt*shading: 		 30
+URxvt*shading: 		 40
 
 !! Fonts
 
