@@ -180,10 +180,14 @@ bar {
         status_command i3status
 }
 
+# Start standalone compositor
+exec --no-startup-id picom -b
+
 # Set background on i3 launch
 exec --no-startup-id feh --bg-scale ~/Pictures/landscape_background.png
 
 # i3 appearance
-for_window [class=".*"] border pixel 2 
+for_window [class=".*"] border pixel 0 
+hide_edge_borders both 
 gaps inner 15
 gaps outer 15

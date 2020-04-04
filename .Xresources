@@ -68,7 +68,7 @@ URxvt.scrollBar:         false
 URxvt*scrollTtyOutput:   false
 URxvt*scrollWithBuffer:  true
 URxvt*scrollTtyKeypress: true
-URxvt*transparent: 	 true
+URxvt*transparent: 	 false
 URxvt*shading: 		 40
 
 !! Fonts
