@@ -63,8 +63,10 @@ URxvt*terminalName:      rxvt-unicode-256color
 URxvt*visualBell:        false
 
 !! Scrollbar
-!URxvt.scrollStyle:      rxvt
+URxvt.scrollStyle:       xterm
 URxvt.scrollBar:         false
+URxvt.scrollBar_floating:false
+URxvt.scrollBar_right:   true
 URxvt*scrollTtyOutput:   false
 URxvt*scrollWithBuffer:  true
 URxvt*scrollTtyKeypress: true
@@ -121,7 +123,7 @@ rofi.modi: run,ssh,window
 rofi.separator-style: solid
 rofi.show-icons: true
 rofi.drun-icon-theme: Papirus-Dark
-rofi.font: FiraCode Nerd Font Mono 10
+rofi.font: SFNS Display 11
 rofi.sidebar-mode:    true
 rofi.padding:         0
 rofi.bw:              10
@@ -130,5 +132,3 @@ rofi.line-margin:     0
 rofi.lines: 10
 rofi.terminal: urxvt
 rofi.case-sensitive: false
-rofi.run-command: fish -c '{cmd}'
-rofi.run-list-command: 'fish -c functions'
