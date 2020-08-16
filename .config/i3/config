@@ -84,8 +84,8 @@ bindsym $mod+h split h
 # split in vertical orientation
 bindsym $mod+v split v
 
-# enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen toggle
+# enter fullscreen mode for the focused container and hide polybar
+bindsym $mod+f fullscreen toggle ; exec /usr/bin/hideIt.sh -N 'polybar' -d top --toggle-peek 
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -188,11 +188,14 @@ exec --no-startup-id picom -b
 exec --no-startup-id feh --bg-scale ~/Pictures/landscape_background.png
 
 # Start polybar on launch
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# hideIt.sh enables hiding/revealing of windows, used here to initiated toggling of polybar 
+exec_always --no-startup-id /usr/bin/hideIt.sh -N 'polybar' -w -d top -p 100 --no-trans -S
 
 # i3 appearance
 for_window [class=".*"] border pixel 0 
 hide_edge_borders both 
 gaps inner 15
 gaps outer 15
-gaps top 50
+gaps top 35
