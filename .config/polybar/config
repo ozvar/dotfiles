@@ -32,8 +32,8 @@ monitor = ${env:MONITOR:Virtual1}
 width = 100%
 height = 30
 offset-x = 0%
-offset-y = 0%
-radius = 0
+offset-y = 1.5%
+radius = 10
 fixed-center = true
 
 override-redirect = true
@@ -45,10 +45,8 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-;border-size = 0
-border-left-size = 0
-border-right-size = 0
-;border-color = #00000000
+border-left-size = 28
+border-right-size = 28
 
 padding-left = 0
 padding-right = 2
@@ -58,54 +56,29 @@ module-margin-right = 3
 
 font-0 = SFNS Display:size=12:weight=Regular;1
 font-1 = SFNS Display:fontformat=truetype:size=10:antialias=false;0
-font-2 = SFNS Display:size=10;1
+font-2 = Font Awesome 5 Free Regular:size=12;4
+font-3 = Font Awesome 5 Free Solid:size=12;4
+font-4 = Font Awesome 5 Brands:size=12;4
 
 modules-left = i3
 modules-center = date
-modules-right = filesystem pulseaudio xkeyboard memory eth cpu wlan battery 
-
-tray-position = right
-tray-padding = 2
-;tray-background = #0063ff
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
+modules-right = xkeyboard cpu battery
 
 cursor-click = pointer
 cursor-scroll = ns-resize
-
-[module/xwindow]
-type = internal/xwindow
-label = %title:0:30:...%
 
 [module/xkeyboard]
 type = internal/xkeyboard
 blacklist-0 = num lock
 
-;format-prefix = " "
-;format-prefix-foreground = ${colors.foreground-alt}
-;format-prefix-underline = ${colors.secondary}
+format-prefix = " " 
 
 label-layout = %layout%
-label-layout-underline = ${colors.secondary}
 
 label-indicator-padding = 2
 label-indicator-margin = 1
 label-indicator-background = ${colors.secondary}
 label-indicator-underline = ${colors.secondary}
-
-[module/filesystem]
-type = internal/fs
-interval = 25
-
-mount-0 = /
-
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
-label-unmounted = %mountpoint% not mounted
-label-unmounted-foreground = ${colors.foreground-alt}
-
-; Separator in between workspaces
-; label-separator = |
 
 [module/i3]
 type = internal/i3
@@ -123,7 +96,7 @@ label-mode-background = ${colors.primary}
 ; focused = Active workspace on focused monitor
 label-focused = %index%
 label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.primary}
+label-focused-underline = ${colors.background-alt}
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
@@ -143,20 +116,6 @@ label-urgent-padding = 2
 
 ; Separator in between workspaces
 ; label-separator = |
-
-
-[module/mpd]
-type = internal/mpd
-format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
-
-icon-prev = 
-icon-stop = 
-icon-play = 
-icon-pause = 
-icon-next = 
-
-label-song-maxlen = 25
-label-song-ellipsis = true
 
 [module/xbacklight]
 type = internal/xbacklight
@@ -183,9 +142,7 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-;format-prefix = " "
-;format-prefix-foreground = ${colors.foreground-alt}
-;format-underline = #f90000
+format-prefix = " "
 label = %percentage:2%%
 
 [module/memory]
@@ -202,7 +159,7 @@ interface = net1
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #9f78e1
+;format-connected-underline = #9f78e1
 label-connected = %essid%
 
 format-disconnected =
@@ -223,7 +180,7 @@ type = internal/network
 interface = enp0s3
 interval = 3.0
 
-format-connected-underline = #55aa55
+;format-connected-underline = #55aa55
 ;format-connected-prefix = " "
 ;format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
@@ -246,7 +203,7 @@ time-alt = %H:%M:%S
 
 ;format-prefix = 
 ;format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #0a6cf5
+;format-underline = #0a6cf5
 
 label = %date% %time%
 
@@ -309,34 +266,19 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 type = internal/battery
 battery = BAT0
 adapter = AC
-full-at = 98
+full-at = 99
 
-;format-charging = <animation-charging> <label-charging>
+format-charging = <ramp-capacity> <label-charging>
 format-charging-underline = #ffb52a
 
-format-discharging = <animation-discharging> <label-discharging>
-format-discharging-underline = ${self.format-charging-underline}
+format-discharging = <ramp-capacity> <label-discharging>
 
-format-full-prefix = " "
-format-full-prefix-foreground = ${colors.foreground-alt}
-format-full-underline = ${self.format-charging-underline}
+format-full-prefix = " "
 
-;ramp-capacity-0 = 
-;ramp-capacity-1 = 
-;ramp-capacity-2 = 
-ramp-capacity-foreground = ${colors.foreground-alt}
-
-;animation-charging-0 = 
-;animation-charging-1 = 
-;animation-charging-2 = 
-animation-charging-foreground = ${colors.foreground-alt}
-animation-charging-framerate = 750
-
-;janimation-discharging-0 = 
-;animation-discharging-1 = 
-;animation-discharging-2 = 
-;animation-discharging-foreground = ${colors.foreground-alt}
-animation-discharging-framerate = 750
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
 
 [module/temperature]
 type = internal/temperature
