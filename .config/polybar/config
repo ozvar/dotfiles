@@ -27,7 +27,7 @@ primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
 
-[bar/default]
+[bar/main]
 monitor = ${env:MONITOR:Virtual1}
 width = 100%
 height = 30
@@ -51,34 +51,22 @@ border-right-size = 28
 padding-left = 0
 padding-right = 2
 
-module-margin-left = 3
-module-margin-right = 3
+module-margin-left = 2
+module-margin-right = 2
 
 font-0 = SFNS Display:size=12:weight=Regular;1
 font-1 = SFNS Display:fontformat=truetype:size=10:antialias=false;0
-font-2 = Font Awesome 5 Free Regular:size=12;4
-font-3 = Font Awesome 5 Free Solid:size=12;4
-font-4 = Font Awesome 5 Brands:size=12;4
+font-2 = Font Awesome 5 Free Regular:size=12;2.25
+font-3 = Font Awesome 5 Free Solid:size=12;2.25
+font-4 = Font Awesome 5 Brands:size=12;2.25
 
 modules-left = i3
 modules-center = date
-modules-right = xkeyboard cpu battery
+modules-right = cpu battery alsa xkeyboard powermenu
 
 cursor-click = pointer
 cursor-scroll = ns-resize
 
-[module/xkeyboard]
-type = internal/xkeyboard
-blacklist-0 = num lock
-
-format-prefix = " " 
-
-label-layout = %layout%
-
-label-indicator-padding = 2
-label-indicator-margin = 1
-label-indicator-background = ${colors.secondary}
-label-indicator-underline = ${colors.secondary}
 
 [module/i3]
 type = internal/i3
@@ -117,6 +105,11 @@ label-urgent-padding = 2
 ; Separator in between workspaces
 ; label-separator = |
 
+[module/xkeyboard]
+type = internal/xkeyboard
+format-prefix = " " 
+label-layout = %layout%
+
 [module/xbacklight]
 type = internal/xbacklight
 
@@ -148,7 +141,7 @@ label = %percentage:2%%
 [module/memory]
 type = internal/memory
 interval = 2
-;format-prefix = " "
+;format-prefix = " "
 ;format-prefix-foreground = ${colors.foreground-alt}
 ;format-underline = #4bffdc
 label = %percentage_used%%
@@ -175,129 +168,53 @@ ramp-signal-3 = 
 ramp-signal-4 = 
 ramp-signal-foreground = ${colors.foreground-alt}
 
-[module/eth]
-type = internal/network
-interface = enp0s3
-interval = 3.0
-
-;format-connected-underline = #55aa55
-;format-connected-prefix = " "
-;format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected = %local_ip%
-
-format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
-
 [module/date]
 type = internal/date
-interval = 5
 
-date =
-date-alt = " %Y-%m-%d"
-
-time = %H:%M
-time-alt = %H:%M:%S
-
-;format-prefix = 
-;format-prefix-foreground = ${colors.foreground-alt}
-;format-underline = #0a6cf5
-
+date =  %a %b %e
+time = - %H:%M
 label = %date% %time%
-
-[module/pulseaudio]
-type = internal/pulseaudio
-
-format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
-label-volume-foreground = ${root.foreground}
-
-label-muted = 🔇 muted
-label-muted-foreground = #666
-
-bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
-bar-volume-gradient = false
-bar-volume-indicator = |
-bar-volume-indicator-font = 2
-bar-volume-fill = ─
-bar-volume-fill-font = 2
-bar-volume-empty = ─
-bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground-alt}
 
 [module/alsa]
 type = internal/alsa
 
-format-volume = <label-volume> <bar-volume>
-label-volume = VOL
-label-volume-foreground = ${root.foreground}
+label-volume = %percentage%%
+label-muted = "  Muted"
 
-format-muted-prefix = " "
-format-muted-foreground = ${colors.foreground-alt}
-label-muted = sound muted
+format-volume = <ramp-volume> <label-volume>
 
-bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
-bar-volume-gradient = false
-bar-volume-indicator = |
-bar-volume-indicator-font = 2
-bar-volume-fill = ─
-bar-volume-fill-font = 2
-bar-volume-empty = ─
-bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground-alt}
+format-muted-background = ${colors.background}
+format-muted-foreground = ${colors.foreground}
+format-muted-padding = 1
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
+ramp-volume-4 = 
+ramp-volume-5 = 
 
 [module/battery]
 type = internal/battery
 battery = BAT0
 adapter = AC
-full-at = 99
+full-at = 98
+
+label-charging = %percentage%%
+label-full = %percentage%%
+label-discharging = %percentage%%
 
 format-charging = <ramp-capacity> <label-charging>
-format-charging-underline = #ffb52a
-
+format-full = <ramp-capacity> <label-full>
 format-discharging = <ramp-capacity> <label-discharging>
 
-format-full-prefix = " "
+format-charging-underline = #ffb52a
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 
 ramp-capacity-3 = 
-
-[module/temperature]
-type = internal/temperature
-thermal-zone = 0
-warn-temperature = 60
-
-format = <ramp> <label>
-format-underline = #f50a4d
-format-warn = <ramp> <label-warn>
-format-warn-underline = ${self.format-underline}
-
-label = %temperature-c%
-label-warn = %temperature-c%
-label-warn-foreground = ${colors.secondary}
-
-;ramp-0 = 
-;ramp-1 = 
-;ramp-2 = 
-ramp-foreground = ${colors.foreground-alt}
+ramp-capacity-4 = 
 
 [module/powermenu]
 type = custom/menu
@@ -306,10 +223,8 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = 
-label-open-foreground = ${colors.secondary}
-label-close =  cancel
-label-close-foreground = ${colors.secondary}
+label-open = 
+label-close = cancel
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
 
@@ -318,26 +233,12 @@ menu-0-0-exec = menu-open-1
 menu-0-1 = power off
 menu-0-1-exec = menu-open-2
 
-menu-1-0 = cancel
-menu-1-0-exec = menu-open-0
-menu-1-1 = reboot
-menu-1-1-exec = sudo reboot
+menu-1-0 = reboot
+menu-1-0-exec = sudo reboot
 
 menu-2-0 = power off
-menu-2-0-exec = sudo poweroff
-menu-2-1 = cancel
-menu-2-1-exec = menu-open-0
-
-[settings]
-screenchange-reload = true
-;compositing-background = xor
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
-;pseudo-transparency = false
+menu-2-0-exec = sudo shutdown now
 
 [global/wm]
 margin-top = 5
 margin-bottom = 5
-
-; vim:ft=dosini
