@@ -1,4 +1,4 @@
-;==========================================================
+/;==========================================================
 ;
 ;
 ;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
@@ -17,12 +17,9 @@
 ;==========================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
 background = #aa0d0f31
 background-alt = #444
-;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
-foreground-alt = #555
 primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
@@ -30,10 +27,10 @@ alert = #bd2c40
 [bar/main]
 monitor = ${env:MONITOR:Virtual1}
 width = 100%
-height = 30
+height = 40
 offset-x = 0%
-offset-y = 1.5%
-radius = 10
+offset-y = 0
+radius = 0
 fixed-center = true
 
 override-redirect = true
@@ -45,8 +42,8 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-border-left-size = 28
-border-right-size = 28
+border-left-size = 0
+border-right-size = 0
 
 padding-left = 0
 padding-right = 2
@@ -225,8 +222,7 @@ format-spacing = 1
 
 label-open = 
 label-close = cancel
-label-separator = |
-label-separator-foreground = ${colors.foreground-alt}
+label-separator = " "
 
 menu-0-0 = reboot
 menu-0-0-exec = menu-open-1
