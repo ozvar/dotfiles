@@ -28,6 +28,9 @@ yay -Syu \
 		pulseaudio-alsa \
 		task \
 		typora \
+		spotify \
+		texlive-most \
+		texstudio \
 		nerd-fonts-inconsolata \
 		ttf-yosemite-san-francisco-font-git \
 		otf-font-awesome
