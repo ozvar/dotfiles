@@ -17,9 +17,9 @@
 ;==========================================================
 
 [colors]
-background = #aa0d0f31
-background-alt = #444
-foreground = #dfdfdf
+background = #aa2E3440
+background-alt = #81A1C1
+foreground = #D8DEE9
 primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
@@ -46,7 +46,7 @@ border-left-size = 0
 border-right-size = 0
 
 padding-left = 0
-padding-right = 2
+padding-right = 4 
 
 module-margin-left = 2
 module-margin-right = 2
@@ -59,7 +59,7 @@ font-4 = Font Awesome 5 Brands:size=12;2.25
 
 modules-left = i3
 modules-center = date
-modules-right = cpu battery alsa xkeyboard powermenu
+modules-right = memory cpu battery alsa xkeyboard time powermenu
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -79,7 +79,6 @@ label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
-label-focused = %index%
 label-focused-background = ${colors.background-alt}
 label-focused-underline = ${colors.background-alt}
 label-focused-padding = 2
@@ -138,9 +137,7 @@ label = %percentage:2%%
 [module/memory]
 type = internal/memory
 interval = 2
-;format-prefix = " "
-;format-prefix-foreground = ${colors.foreground-alt}
-;format-underline = #4bffdc
+format-prefix = " "
 label = %percentage_used%%
 
 [module/wlan]
@@ -169,8 +166,13 @@ ramp-signal-foreground = ${colors.foreground-alt}
 type = internal/date
 
 date =  %a %b %e
-time = - %H:%M
-label = %date% %time%
+label = %date% 
+
+[module/time]
+type = internal/date
+
+time =  %H:%M
+label = %time%
 
 [module/alsa]
 type = internal/alsa
@@ -205,7 +207,7 @@ format-charging = <ramp-capacity> <label-charging>
 format-full = <ramp-capacity> <label-full>
 format-discharging = <ramp-capacity> <label-discharging>
 
-format-charging-underline = #ffb52a
+format-charging-underline = ${colors.background-alt}
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
