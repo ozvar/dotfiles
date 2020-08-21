@@ -1,39 +1,55 @@
-! special
-*.foreground:   #ffffff
-*.background:   [70]#0d0f31
-*.cursorColor:  #ffffff
+! URxvt and (provisional) rofi config
+!
+! Nord colour scheme in use, courtesy of arcticicestudio prefaced below
+!
+! Copyright (c) 2016-present Arctic Ice Studio <development@arcticicestudio.com>
+! Copyright (c) 2016-present Sven Greb <code@svengreb.de>
 
-! black
-*.color0:       #000000 
-*.color8:       #000000
+! Project:    Nord XResources
+! Version:    0.1.0
+! Repository: https://github.com/arcticicestudio/nord-xresources
+! License:    MIT
 
-! red
-*.color1:       #ff16b0
-*.color9:       #ff16b0
+#define nord0 #2E3440
+#define nord1 #3B4252
+#define nord2 #434C5E
+#define nord3 #4C566A
+#define nord4 #D8DEE9
+#define nord5 #E5E9F0
+#define nord6 #ECEFF4
+#define nord7 #8FBCBB
+#define nord8 #88C0D0
+#define nord9 #81A1C1
+#define nord10 #5E81AC
+#define nord11 #BF616A
+#define nord12 #D08770
+#define nord13 #EBCB8B
+#define nord14 #A3BE8C
+#define nord15 #B48EAD
 
-! green
-*.color2:       #b3f361
-*.color10:      #b3f361
+*.foreground:   nord4
+*.background:   nord0
+*.cursorColor:  nord4
+*fading: 35
+*fadeColor: nord3
 
-! yellow
-*.color3:       #ffea16
-*.color11:      #ffea16
+*.color0: nord1
+.color1: nord11
+*.color2: nord14
+*.color3: nord13
+*.color4: nord9
+*.color5: nord15
+*.color6: nord8
+*.color7: nord5
+*.color8: nord3
+*.color9: nord11
+*.color10: nord14
+*.color11: nord13
+*.color12: nord9
+*.color13: nord15
+*.color14: nord7
+*.color15: nord6
 
-! blue
-*.color4:       #46bdff 
-*.color12:      #46bdff
-
-! magenta
-*.color5:       #f806fa
-*.color13:      #f806fa
-
-! cyan
-*.color6:       #59e1e3
-*.color14:      #6be4e6
-
-! white
-*.color7:       #ffffff 
-*.color15:      #ffffff
 
 Xft.dpi: 96
 Xft.antialias: true
@@ -42,10 +58,6 @@ Xft.rgba: rgb
 Xft.autohint: false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
-
-!XTerm*background: bg_color
-!XTerm*foreground: fg_color
-!XTerm*pointerColor: cursor_color
 XTerm*faceName: Inconsolata Nerd Font:Regular
 XTerm*faceSize: 12
 XTerm*geometry: 80x25
@@ -73,24 +85,9 @@ URxvt*scrollTtyKeypress: true
 URxvt*transparent: 	 false
 URxvt*shading: 		 40
 
-!! Fonts
-
 URxvt*font:               xft:Inconsolata Nerd Font:size=12:minspace=False
-!URxvt*boldFont:          xft:Inconsolata Nerd Font:Bold:size=12
-!URxvt*italicFont:        xft:Inconsolata Nerd Font:Regular:size=12
-!URxvt*boldItalicFont:    xft:Inconsolata Nerd Font:Regular:size=12
-!URxvt.letterSpace:       false
 
-!! Keybinding
-URxvt.keysym.C-Up:       perl:font-size:increase
-URxvt.keysym.C-Down:     perl:font-size:decrease
-URxvt.keysym.C-S-Up:     perl:font-size:incglobal
-URxvt.keysym.C-S-Down:   perl:font-size:decglobal
-!Home and End keys to jump to the beginning and end of lines
-URxvt*keysym.Home:       \033[1~
-URxvt*keysym.End:        \033[4~
 
-!! Tabs
 URxvt.tabbed.tabbar-bg:  -1
 URxvt.tabbed.tabbar-fg:  -2
 URxvt.tabbed.tab-bg:     -2
@@ -119,7 +116,7 @@ rofi.color-normal: argb:001c1d21, #cbcdd2, argb:001c1d21, argb:c2d6d8db, #222222
 rofi.color-active: argb:4d1b2b34, #6699cc, argb:4d343d46, argb:4d6699cc, #d8dee9
 rofi.color-urgent: argb:4d1b2b34, #ec5f67, argb:4d343d46, argb:4dec5f67, #d8dee9
 
-rofi.modi: run,ssh,window
+rofi.modi: run
 rofi.separator-style: solid
 rofi.show-icons: true
 rofi.drun-icon-theme: Papirus-Dark
