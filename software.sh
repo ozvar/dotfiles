@@ -32,6 +32,8 @@ yay -Syu \
 		spotify \
 		texlive-most \
 		texstudio \
+		powerline \
+		powerline-fonts \
 		nerd-fonts-inconsolata \
 		ttf-yosemite-san-francisco-font-git \
 		otf-font-awesome
