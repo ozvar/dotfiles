@@ -34,9 +34,13 @@ yay -Syu \
 		texstudio \
 		powerline \
 		powerline-fonts \
+		xdg-user-dirs \
 		nerd-fonts-inconsolata \
 		ttf-yosemite-san-francisco-font-git \
 		otf-font-awesome
+
+# create default user dirs
+xdg-user-dirs-update
 
 # python
 pip3 install jedi \
