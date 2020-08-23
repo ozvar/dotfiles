@@ -10,6 +10,10 @@ makepkg -si
 cd ..
 rm -rf yay
 
+# keys for spotify and dropbox
+curl -sS https://download.spotify.com/debian/pubkey.gpg | gpg --import -
+gpg --recv-keys 1C61A2656FB57B7E4DE0F4C1FC918B335044912E
+
 # main packages
 yay -Syu \
 		xorg \
