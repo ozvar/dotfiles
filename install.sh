@@ -6,7 +6,7 @@ exit 0
 
 # Boot ISO
 # verify integrity 
-# gpg --keyserver-options auto-key-retrieve --verify archlinux-version-x86_64.iso.sig
+# gpg --keyserver-options auto-key-retrieve --verify [arch-iso].sig
 
 # set keymap, internet, clock
 loadkeys uk
