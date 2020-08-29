@@ -28,6 +28,8 @@ yay -Syu \
 		rofi \
 		feh \
 		zathura \
+		zathura-pdf-mupdf \
+		zathura-cb \
 		firefox \
 		pulseaudio \
 		pulseaudio-alsa \
