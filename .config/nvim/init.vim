@@ -7,6 +7,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'Roy-Orbison/nord-vim'				" nord color scheme
 Plug 'vim-airline/vim-airline'			" sexy status line
 Plug 'vim-airline/vim-airline-themes'	" make the status line even sexier
+Plug 'lervag/vimtex'					" plugin for LaTeX files
 
 call plug#end()
 
@@ -23,3 +24,4 @@ set number								" line numbers on
 set tabstop=4 							" adjust tab space
 set clipboard+=unnamedplus				" access system clipboard register with "+" 
 
+let g:tex_flavor = 'latex'
