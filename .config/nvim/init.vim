@@ -25,3 +25,5 @@ set tabstop=4 							" adjust tab space
 set clipboard+=unnamedplus				" access system clipboard register with "+" 
 
 let g:tex_flavor = 'latex'
+
+autocmd FileType tex set textwidth=79
