@@ -8,6 +8,10 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
+# set default editor
+export VISUAL=nvim
+export EDITOR=nvim
+
 # enable powerline in terminal
 powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
