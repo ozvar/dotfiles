@@ -174,10 +174,13 @@ bindsym $mod+r mode "resize"
 exec --no-startup-id picom -b
 
 # Set background on i3 launch
-exec --no-startup-id feh --bg-scale ~/Pictures/landscape_background.png
+exec --no-startup-id feh --bg-scale ~/Pictures/wallpapers/redmoon.png
 
 # Start polybar on launch
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id bash ~/.config/polybar/launch.sh
+
+# Start dropbox on launch
+exec_always "sh -c 'sleep 5; exec /usr/bin/dropbox'"
 
 # hideIt.sh enables hiding/revealing of windows, used here to initiated toggling of polybar 
 exec_always --no-startup-id /usr/bin/hideIt.sh -N 'polybar' -w -d top -p 100 --no-trans -S
