@@ -20,6 +20,8 @@ yay -Syu \
 		xinit \
 		python-pip \
 		i3-gaps \
+		lightdm \
+		lightdm-slick-greeter \
 		rxvt-unicode \
 		neovim \ 
 		ranger \
