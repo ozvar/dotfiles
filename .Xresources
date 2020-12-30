@@ -85,7 +85,7 @@ URxvt*scrollTtyKeypress: true
 URxvt*transparent: 	 false
 URxvt*shading: 		 40
 
-URxvt*font:               xft:Inconsolata Nerd Font:size=12:minspace=False
+URxvt*font:              xft:Inconsolata Nerd Font:size=12:minspace=False
 
 
 URxvt.tabbed.tabbar-bg:  -1
