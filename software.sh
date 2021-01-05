@@ -36,6 +36,7 @@ yay -Syu \
 		pulseaudio \
 		pulseaudio-alsa \
 		udisks2 \
+		udiskie \
 		task \
 		typora \
 		spotify \

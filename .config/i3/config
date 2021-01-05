@@ -17,11 +17,14 @@ font pango:SFNS Display 11
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+# exec --no-startup-id nm-applet
+
+# udiskie monitors and automounts external devices
+exec --no-startup-id udiskie -ans &
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -162,22 +165,22 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # start xbindkeys for keyboard shortcuts
-exec --no-startup-id xbindkeys
+# exec --no-startup-id xbindkey
 
 # Start standalone compositor
 exec --no-startup-id picom -b
 
 # Set background on i3 launch
-exec --no-startup-id feh --bg-scale ~/Pictures/wallpapers/redmoon.png
+exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/istanbul.jpg
 
 # Start polybar on launch
 exec_always --no-startup-id bash ~/.config/polybar/launch.sh
 
 # Start dropbox on launch
-exec_always "sh -c 'sleep 5; exec /usr/bin/dropbox'"
+exec_always --no-startup-id "sh -c 'sleep 5; exec /usr/bin/dropbox'"
 
 # hideIt.sh enables hiding/revealing of windows, used here to initiated toggling of polybar 
-exec_always --no-startup-id /usr/bin/hideIt.sh -N 'polybar' -w -d top -p 100 --no-trans -S
+# exec_always --no-startup-id /usr/bin/hideIt.sh -N 'polybar' -w -d top -p 100 --no-trans -S
 
 # i3 appearance
 for_window [class=".*"] border pixel 0 
