@@ -37,6 +37,9 @@ yay -Syu \
 		pulseaudio-alsa \
 		udisks2 \
 		udiskie \
+		r \
+		nvim-r \
+		rstudio-desktop-bin \
 		task \
 		typora \
 		spotify \
@@ -58,6 +61,7 @@ pip3 install jedi \
 		pandas \
 		requests \
 		matplotlib \
+		jupyterlab \
 		scipy \
 		seaborn \
 
