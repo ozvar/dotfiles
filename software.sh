@@ -35,6 +35,7 @@ yay -Syu \
 		firefox \
 		pulseaudio \
 		pulseaudio-alsa \
+		udisks2 \
 		task \
 		typora \
 		spotify \
