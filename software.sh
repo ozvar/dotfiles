@@ -50,7 +50,8 @@ yay -Syu \
 		xdg-user-dirs \
 		nerd-fonts-inconsolata \
 		ttf-yosemite-san-francisco-font-git \
-		otf-font-awesome
+		otf-font-awesome \
+		llvm10
 
 # create default user dirs
 xdg-user-dirs-update
@@ -61,9 +62,18 @@ pip3 install jedi \
 		pandas \
 		requests \
 		matplotlib \
+		seaborn \
 		jupyterlab \
 		scipy \
-		seaborn \
+		pingouin \
+		tqdm \
+		cython \
+		llvmlite \
+		tslearn \
+		hdbscan \
+		umap \
+		pymc3 \
+
 
 # clone dotfiles somewhere here
 
