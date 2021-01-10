@@ -51,7 +51,8 @@ yay -Syu \
 		nerd-fonts-inconsolata \
 		ttf-yosemite-san-francisco-font-git \
 		otf-font-awesome \
-		llvm10
+		llvm10 \
+		gcc-fortran
 
 # create default user dirs
 xdg-user-dirs-update
