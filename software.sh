@@ -24,6 +24,11 @@ yay -Syu \
 		lightdm-slick-greeter \
 		rxvt-unicode \
 		neovim \ 
+		nerd-fonts-inconsolata \
+		ttf-yosemite-san-francisco-font-git \
+		otf-font-awesome \
+		powerline \
+		powerline-fonts \
 		ranger \
 		picom \
 		polybar \
@@ -35,6 +40,7 @@ yay -Syu \
 		firefox \
 		pulseaudio \
 		pulseaudio-alsa \
+		pavucontrol \
 		udisks2 \
 		udiskie \
 		r \
@@ -43,14 +49,13 @@ yay -Syu \
 		task \
 		typora \
 		spotify \
+		dropbox \
+		signal-desktop \
+		telegram-desktop \
+		discord \
 		texlive-most \
 		texstudio \
-		powerline \
-		powerline-fonts \
 		xdg-user-dirs \
-		nerd-fonts-inconsolata \
-		ttf-yosemite-san-francisco-font-git \
-		otf-font-awesome \
 		llvm10 \
 		gcc-fortran
 
