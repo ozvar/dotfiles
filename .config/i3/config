@@ -24,7 +24,7 @@ font pango:SFNS Display 11
 # exec --no-startup-id nm-applet
 
 # udiskie monitors and automounts external devices
-exec --no-startup-id udiskie -ans &
+exec_always --no-startup-id udiskie -ans &
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -178,6 +178,9 @@ exec_always --no-startup-id bash ~/.config/polybar/launch.sh
 
 # Start dropbox on launch
 exec_always --no-startup-id "sh -c 'sleep 5; exec /usr/bin/dropbox'"
+
+# Start redshift on launch
+exec_always --no-startup-id redshift -l 51.5:-0.7
 
 # hideIt.sh enables hiding/revealing of windows, used here to initiated toggling of polybar 
 # exec_always --no-startup-id /usr/bin/hideIt.sh -N 'polybar' -w -d top -p 100 --no-trans -S

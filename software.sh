@@ -57,7 +57,9 @@ yay -Syu \
 		texstudio \
 		xdg-user-dirs \
 		llvm10 \
-		gcc-fortran
+		gcc-fortran \
+		anki \
+		redshift
 
 # create default user dirs
 xdg-user-dirs-update
