@@ -81,6 +81,7 @@ pip3 install jedi \
 		hdbscan \
 		umap \
 		pymc3 \
+		nodejs 
 
 
 # clone dotfiles somewhere here
