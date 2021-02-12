@@ -59,7 +59,8 @@ yay -Syu \
 		llvm10 \
 		gcc-fortran \
 		anki \
-		redshift
+		redshift \
+		timeshift
 
 # create default user dirs
 xdg-user-dirs-update
