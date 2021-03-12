@@ -27,6 +27,9 @@ yay -Syu \
 		nerd-fonts-inconsolata \
 		ttf-yosemite-san-francisco-font-git \
 		otf-font-awesome \
+		noto-fonts-extra \
+		noto-fonts-cjk \
+		noto-fonts-emoji \
 		powerline \
 		powerline-fonts \
 		ranger \
@@ -60,7 +63,7 @@ yay -Syu \
 		gcc-fortran \
 		anki \
 		redshift \
-		backintime
+		backintime 
 
 # create default user dirs
 xdg-user-dirs-update
