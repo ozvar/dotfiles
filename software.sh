@@ -63,7 +63,9 @@ yay -Syu \
 		gcc-fortran \
 		anki \
 		redshift \
-		backintime 
+		backintime \
+		mpd \
+		ncmpcpp
 
 # create default user dirs
 xdg-user-dirs-update
