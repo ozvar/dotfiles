@@ -66,6 +66,7 @@ yay -Syu \
 		backintime \
 		mpd \
 		ncmpcpp \
+		xournalpp \
 		xf86-input-wacom \
 
 
