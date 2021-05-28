@@ -65,7 +65,9 @@ yay -Syu \
 		redshift \
 		backintime \
 		mpd \
-		ncmpcpp
+		ncmpcpp \
+		xf86-input-wacom \
+
 
 # create default user dirs
 xdg-user-dirs-update
