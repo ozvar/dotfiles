@@ -49,6 +49,8 @@ yay -Syu \
 		r \
 		nvim-r \
 		rstudio-desktop-bin \
+		tmux \
+		tmuxinator \
 		task \
 		typora \
 		spotify \
