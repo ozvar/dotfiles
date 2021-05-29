@@ -182,6 +182,9 @@ exec_always --no-startup-id "sh -c 'sleep 5; exec /usr/bin/dropbox'"
 # Start redshift on launch
 exec_always --no-startup-id redshift -l 51.5:-0.7
 
+# Set wacom tablet to relative mode
+exec --no-startup-id xsetwacom --set "13" Mode Relative 
+
 # hideIt.sh enables hiding/revealing of windows, used here to initiated toggling of polybar 
 # exec_always --no-startup-id /usr/bin/hideIt.sh -N 'polybar' -w -d top -p 100 --no-trans -S
 
