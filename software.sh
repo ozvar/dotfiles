@@ -70,6 +70,7 @@ yay -Syu \
 		ncmpcpp \
 		xournalpp \
 		xf86-input-wacom \
+		pandoc
 
 
 # create default user dirs
