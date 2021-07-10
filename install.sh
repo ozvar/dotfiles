@@ -23,7 +23,7 @@ swapon /dev/sdX2
 mount /dev/sdX1 /mnt
 
 # format ESP and mount on root partition (UEFI)
-mkfs.fat -F32 /ev/sdxY
+mkfs.fat -F32 /dev/sdxY
 mount /dev/sdX /boot
 
 # edit mirror list, retain local servers
