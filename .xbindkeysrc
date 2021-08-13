@@ -18,6 +18,14 @@
 "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
    XF86AudioMicMute
 
+# Increase screen brightness
+"light -A 10"
+   XF86MonBrightnessUp  
+
+# Decrease screen brightness
+"light -U 10"
+   XF86MonBrightnessDown 
+
 ##################################
 # End of xbindkeys configuration #
 ##################################
