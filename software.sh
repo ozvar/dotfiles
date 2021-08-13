@@ -44,6 +44,7 @@ yay -Syu \
 		pulseaudio \
 		pulseaudio-alsa \
 		pavucontrol \
+		xbindkeys \
 		udisks2 \
 		udiskie \
 		r \
