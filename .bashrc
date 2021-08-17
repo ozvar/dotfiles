@@ -6,11 +6,14 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
+alias mux='tmuxinator'
 PS1='[\u@\h \W]\$ '
 
 # set default editor
 export VISUAL=nvim
 export EDITOR=nvim
+export TERM=rxvt-256color
+export PATH="$HOME/.local/bin:$PATH"
 
 # enable powerline in terminal
 powerline-daemon -q
