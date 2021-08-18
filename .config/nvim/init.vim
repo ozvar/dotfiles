@@ -4,10 +4,19 @@
 " Plugins
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'Roy-Orbison/nord-vim'				" nord color scheme
+Plug 'arcticicestudio/nord-vim'			" nord color scheme
 Plug 'vim-airline/vim-airline'			" sexy status line
 Plug 'vim-airline/vim-airline-themes'	" make the status line even sexier
+
 Plug 'lervag/vimtex'					" plugin for LaTeX files
+
+Plug 'preservim/nerdtree'				" file system explorer inside vim
+Plug 'Townk/vim-autoclose'				" autoclose brackets
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}    
+
+Plug 'JuliaEditorSupport/julia-vim'		" julia support for vim
+Plug 'kdheepak/JuliaFormatter.vim'		" formatter for julia code
 
 call plug#end()
 
@@ -28,3 +37,5 @@ set guicursor=a:blinkon100				" cursor blink
 
 let g:vimtex_view_method = 'zathura'
 let g:tex_flavor = 'latex'
+
+" Mappings
