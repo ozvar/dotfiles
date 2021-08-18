@@ -39,3 +39,7 @@ let g:vimtex_view_method = 'zathura'
 let g:tex_flavor = 'latex'
 
 " Mappings
+let mapleader = ";"
+
+:nnoremap <leader>n :NERDTreeFocus<CR>
+:nnoremap <C-n> :NERDTree<CR>
