@@ -15,6 +15,7 @@ Plug 'Townk/vim-autoclose'				" autoclose brackets
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}    
 
+Plug 'jpalardy/vim-slime'				" send text from editor to REPL
 Plug 'JuliaEditorSupport/julia-vim'		" julia support for vim
 Plug 'kdheepak/JuliaFormatter.vim'		" formatter for julia code
 
