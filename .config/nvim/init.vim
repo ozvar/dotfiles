@@ -38,9 +38,10 @@ set guicursor=a:blinkon100				" cursor blink
 
 let g:vimtex_view_method = 'zathura'
 let g:tex_flavor = 'latex'
+let g:slime_target = 'tmux'
 
 " Mappings
-let mapleader = ";"
+let mapleader = ';'
 
 :nnoremap <leader>n :NERDTreeFocus<CR>
 :nnoremap <C-n> :NERDTree<CR>
