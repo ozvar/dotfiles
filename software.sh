@@ -26,6 +26,7 @@ yay -Syu \
 		neovim \ 
 		nerd-fonts-inconsolata \
 		ttf-yosemite-san-francisco-font-git \
+		ttf-dejavu \
 		otf-font-awesome \
 		noto-fonts-extra \
 		noto-fonts-cjk \
@@ -104,3 +105,17 @@ pip3 install jedi \
 # install vim-plug to manage neovim plugins
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+# for openttd to run natively in arch
+yay -S \
+		openttd \
+		openttd-opengfx \
+		openttd-opensfx \
+		openttd-openmsx \
+		timidity++ \
+		freepats-general-midi
+
+# add self to audio group
+gpasswd -a <user> audio
+# point to freepats in /etc/timidity/timidity.cfg
+# soundfont /usr/share/soundfonts/freepats-general-midi.sf2

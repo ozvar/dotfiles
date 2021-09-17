@@ -67,6 +67,7 @@ URxvt.iconFile:          /usr/share/icons/Papirus-Dark/48x48/apps/urxvt.svg
 URxvt.internalBorder:    16
 !URxvt.externalBorder:   12
 URxvt.lineSpace:         1
+!URxvt.letterSpace:		 1
 !URxvt*shading:          30
 URxvt.depth:             16
 URxvt.saveLines:         10000
@@ -85,7 +86,10 @@ URxvt*scrollTtyKeypress: true
 URxvt*transparent: 	 false
 URxvt*shading: 		 40
 
-URxvt*font:              xft:Inconsolata Nerd Font:size=12:minspace=False
+URxvt*font:              xft:Inconsolata Nerd Font Mono:pixelsize=23:minspace=False, xft:DejaVu Sans:pixelsize=18
+URxvt*boldFont:          xft:Inconsolata Nerd Font Mono:pixelsize=23:minspace=False, xft:DejaVu Sans:pixelsize=18
+URxvt.letterSpace: 0
+
 
 
 URxvt.tabbed.tabbar-bg:  -1
