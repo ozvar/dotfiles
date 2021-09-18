@@ -86,11 +86,8 @@ URxvt*scrollTtyKeypress: true
 URxvt*transparent: 	 false
 URxvt*shading: 		 40
 
-URxvt*font:              xft:Inconsolata Nerd Font Mono:pixelsize=23:minspace=False, xft:DejaVu Sans:pixelsize=18
-URxvt*boldFont:          xft:Inconsolata Nerd Font Mono:pixelsize=23:minspace=False, xft:DejaVu Sans:pixelsize=18
+URxvt*font:              xft:Inconsolata Nerd Font Mono:pixelsize=24:minspace=False, xft:DejaVu Sans:pixelsize=18
 URxvt.letterSpace: 0
-
-
 
 URxvt.tabbed.tabbar-bg:  -1
 URxvt.tabbed.tabbar-fg:  -2
@@ -113,23 +110,3 @@ Xcursor.theme:             La Captaine
 
 !! Pointer
 !URxvt.pointerBlank: true
-
-rofi.color-enabled: true
-rofi.color-window: argb:aa1c1d21, #751c1d21, argb:001c1d21
-rofi.color-normal: argb:001c1d21, #cbcdd2, argb:001c1d21, argb:c2d6d8db, #222222
-rofi.color-active: argb:4d1b2b34, #6699cc, argb:4d343d46, argb:4d6699cc, #d8dee9
-rofi.color-urgent: argb:4d1b2b34, #ec5f67, argb:4d343d46, argb:4dec5f67, #d8dee9
-
-rofi.modi: run
-rofi.separator-style: solid
-rofi.show-icons: true
-rofi.drun-icon-theme: Papirus-Dark
-rofi.font: SFNS Display 11
-rofi.sidebar-mode:    true
-rofi.padding:         0
-rofi.bw:              10
-rofi.scrollbar-width: 0
-rofi.line-margin:     0
-rofi.lines: 10
-rofi.terminal: urxvt
-rofi.case-sensitive: false
