@@ -4,21 +4,22 @@
 " Plugins
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'arcticicestudio/nord-vim'			" nord color scheme
-Plug 'vim-airline/vim-airline'			" sexy status line
-Plug 'vim-airline/vim-airline-themes'	" make the status line even sexier
+Plug 'arcticicestudio/nord-vim'					" nord color scheme
+Plug 'vim-airline/vim-airline'					" sexy status line
+Plug 'vim-airline/vim-airline-themes'			" make the status line even sexier
 
-Plug 'lervag/vimtex'					" plugin for LaTeX files
+Plug 'lervag/vimtex'							" plugin for LaTeX files
 
-Plug 'preservim/nerdtree'				" file system explorer inside vim
-Plug 'ryanoasis/vim-devicons'			" glyphs for nerdtree
-Plug 'Townk/vim-autoclose'				" autoclose brackets
+Plug 'preservim/nerdtree'						" file system explorer inside vim
+Plug 'ryanoasis/vim-devicons'					" glyphs for nerdtree
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'	" add syntax and colors to nerdtree
+Plug 'Townk/vim-autoclose'						" autoclose brackets
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}    
 
-Plug 'jpalardy/vim-slime'				" send text from editor to REPL
-Plug 'JuliaEditorSupport/julia-vim'		" julia support for vim
-Plug 'kdheepak/JuliaFormatter.vim'		" formatter for julia code
+Plug 'jpalardy/vim-slime'						" send text from editor to REPL
+Plug 'JuliaEditorSupport/julia-vim'				" julia support for vim
+Plug 'kdheepak/JuliaFormatter.vim'				" formatter for julia code
 
 call plug#end()
 
