@@ -34,6 +34,7 @@ set encoding=utf-8						"
 set syntax=on							" syntax coloring should always be on
 set number								" line numbers on
 set tabstop=4 							" adjust tab space
+set shiftwidth=4						" adjust indentation space
 set lbr									" disable line breaks in the middle of words
 set clipboard+=unnamedplus				" access system clipboard register with "+" 
 set guicursor=a:blinkon100				" cursor blink
