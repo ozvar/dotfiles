@@ -34,6 +34,7 @@ yay -Syu \
 		powerline \
 		powerline-fonts \
 		ranger \
+		w3m \
 		nodejs \
 		picom \
 		polybar \
