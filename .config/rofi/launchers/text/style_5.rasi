@@ -18,6 +18,7 @@ configuration {
     combi-hide-mode-prefix: 		false;
     display-window: 				"";
     display-windowcd: 				"";
+    display-find:	 				"";
     display-run: 					"";
     display-ssh: 					"";
     display-drun: 					"";
@@ -77,7 +78,7 @@ mainbox {
 
 listview {
     lines:							5;
-    columns:						3;
+    columns:						1;
     fixed-height: 					0;
     border: 						0px;
     border-color: 					@ac;

@@ -24,6 +24,6 @@ color="${styles[$(( $RANDOM % 10 ))]}"
 # theme="${themes[$(( $RANDOM % 7 ))]}"
 
 rofi -no-lazy-grab -show run \
--modi run \
+-modi run,find:~/.config/rofi/finder/finder.sh \
 -theme $dir/"$theme"
 
