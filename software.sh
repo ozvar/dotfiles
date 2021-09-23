@@ -24,6 +24,7 @@ yay -Syu \
 		lightdm-slick-greeter \
 		rxvt-unicode \
 		neovim \ 
+		npm \
 		nerd-fonts-inconsolata \
 		ttf-yosemite-san-francisco-font-git \
 		ttf-dejavu \
