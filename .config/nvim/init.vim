@@ -15,11 +15,11 @@ Plug 'ryanoasis/vim-devicons'					" glyphs for nerdtree
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'	" add syntax and colors to nerdtree
 Plug 'Townk/vim-autoclose'						" autoclose brackets
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}    
-
 Plug 'jpalardy/vim-slime'						" send text from editor to REPL
 Plug 'JuliaEditorSupport/julia-vim'				" julia support for vim
 Plug 'kdheepak/JuliaFormatter.vim'				" formatter for julia code
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}    
 
 call plug#end()
 
@@ -49,3 +49,22 @@ let mapleader = ';'
 
 :nnoremap <leader>n :NERDTreeFocus<CR>
 :nnoremap <C-n> :NERDTree<CR>
+" Have a signs colum on the left
+set signcolumn=yes
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Usage keymaps.
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Use tab to trigger completion and navigate.
+inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" : <SID>check_back_space() ? "\<TAB>" : coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+" ctrl-space to trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
+
+" Use <cr> to comfirm completion.
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+" Use `[g` and `]g` to navigate diagnostics.
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
