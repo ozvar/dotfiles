@@ -6,8 +6,8 @@ let g:latex_to_unicode_tab = 0
 let g:latex_to_unicode_cmd_mapping = ['<C-J>']
 
 " Formatting
-nnoremap <localleader>jf :<C-u>call JuliaFormatter#Format(0)<CR>
-vnoremap <localleader>jf :<C-u>call JuliaFormatter#Format(1)<CR>
+nnoremap <leader>jf :<C-u>call JuliaFormatter#Format(0)<CR>
+vnoremap <leader>jf :<C-u>call JuliaFormatter#Format(1)<CR>
 
 " Slime default configuration
 let g:slime_default_config = {"socket_name": "default", "target_pane": "julia:1.1"}
