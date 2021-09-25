@@ -1,0 +1,8 @@
+# /home/ozvar/.config/tmuxinator/julia.yml
+
+name: writing
+root: .
+
+windows:
+  - main: nvim
+  - ranger: ranger
