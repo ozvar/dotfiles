@@ -103,10 +103,7 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-<<<<<<< HEAD
 bindsym $mod+Shift+t workspace number $ws9 ; exec urxvt -hold -e python ~/Dropbox/CBT/dream_catcher/dream_catcher.py
-=======
->>>>>>> 24fbb8f28ad5495bc4249b6188ae4727d89f6403
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
