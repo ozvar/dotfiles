@@ -1,0 +1,8 @@
+[Added Associations]
+text/x-r-source=nvim.desktop;
+x-scheme-handler/tg=userapp-Telegram Desktop-CFMGX0.desktop;
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
+application/octet-stream=rstudio.desktop;
+
+[Default Applications]
+x-scheme-handler/tg=userapp-Telegram Desktop-CFMGX0.desktop
