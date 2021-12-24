@@ -103,7 +103,6 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
@@ -129,7 +128,7 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # load dream_catcher python script on binded shortcut
-bindsym $mod+Shift+t workspace number $ws9 ; exec urxvt -hold -e python ~/CBT/dream_catcher/dream_catcher.py
+bindsym $mod+Shift+t workspace number $ws9 ; exec urxvt -hold -e python ~/Dropbox/CBT/dream_catcher/dream_catcher.py
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
