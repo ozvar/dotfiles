@@ -76,7 +76,8 @@ yay -Syu \
 		xournalpp \
 		xf86-input-wacom \
 		pandoc \
-		scrot
+		scrot \
+		pyenv
 
 
 # create default user dirs
