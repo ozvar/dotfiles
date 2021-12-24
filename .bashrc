@@ -37,3 +37,6 @@ function ranger {
     fi
     command rm -f -- "$tempfile" 2>/dev/null
 }
+
+# support for "shims" used by pyenv to enable python version switching
+source /usr/share/pyenv/pyenv_user_setup.bash
