@@ -15,6 +15,11 @@ export EDITOR=nvim
 export TERM=rxvt-256color
 export PATH="$HOME/.local/bin:$PATH"
 
+# set paths for pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$PYENV_ROOT/shims:$PATH"
+
 # enable powerline in terminal
 powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
@@ -40,3 +45,4 @@ function ranger {
 
 # support for "shims" used by pyenv to enable python version switching
 source /usr/share/pyenv/pyenv_user_setup.bash
+eval "$(pyenv init - | sed 's:^pyenv() :function pyenv():')"
