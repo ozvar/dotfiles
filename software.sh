@@ -91,6 +91,7 @@ pip3 install jedi \
 		matplotlib \
 		seaborn \
 		jupyterlab \
+		ipykernel \
 		scipy \
 		pingouin \
 		tqdm \
