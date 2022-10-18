@@ -77,7 +77,8 @@ yay -Syu \
 		xf86-input-wacom \
 		pandoc \
 		scrot \
-		pyenv
+		pyenv \
+		deezer
 
 
 # create default user dirs
