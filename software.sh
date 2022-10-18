@@ -2,7 +2,6 @@
 # packages for day-to-day usage, DE, theming #
 ##############################################
 
-
 # install yay 
 git clone https://aur.archlinux.org/yay.git
 cd yay
@@ -78,7 +77,8 @@ yay -Syu \
 		pandoc \
 		scrot \
 		pyenv \
-		deezer
+		deezer \
+		newsboat
 
 
 # create default user dirs
@@ -103,7 +103,6 @@ pip3 install jedi \
 		umap \
 		pymc3 \
 		nodejs \
-		newsboat
 
 
 # clone dotfiles somewhere here
