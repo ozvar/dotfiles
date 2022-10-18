@@ -101,7 +101,8 @@ pip3 install jedi \
 		hdbscan \
 		umap \
 		pymc3 \
-		nodejs 
+		nodejs \
+		newsboat
 
 
 # clone dotfiles somewhere here
