@@ -1,1 +1,20 @@
-https://www.nature.com/neuro.rss
+# Journals 
+"query:Journal Articles:tags # \"journal\""
+https://www.nature.com/neuro.rss "~· Nature Neuroscience"  "journal"
+https://www.nature.com/nrn.rss "~· Nature Reviews Neuroscience" "journal"
+https://www.nature.com/ncomms.rss "~· Nature Comms"  "journal"
+https://www.pnas.org/action/showFeed?type=etoc&feed=rss&jc=PNAS "~· PNAS" "journal"
+https://royalsocietypublishing.org/action/showFeed?type=etoc&feed=rss&jc=rsos "~· Royal Society Open Science" "journal"
+https://journals.sagepub.com/action/showFeed?ui=0&mi=ehikzz&ai=2b4&jc=pssa&type=axatoc&feed=rss "~· Psychological Science" "journal"
+https://www.cell.com/neuron/current.rss "~· Neuron" "journal"
+https://elifesciences.org/rss/subject/neuroscience.xml "~· eLife (Neuroscience)" "journal"
+
+# Science magazines 
+"query:Science/Tech News:tags # \"science/tech news\""
+https://feeds.arstechnica.com/arstechnica/science "~· Ars Technica Science" "science/tech news"
+https://feeds.arstechnica.com/arstechnica/technology-lab "~· Ars Technica Tech" "science/tech news"
+https://api.quantamagazine.org/feed/ "~· Quanta magazine" "science/tech news"
+https://hnrss.org/newest?points=15 "~· Hacker News" "science/tech news"
+
+# Tech news
+
