@@ -78,7 +78,8 @@ yay -Syu \
 		scrot \
 		pyenv \
 		deezer \
-		newsboat
+		newsboat \
+		inkscape
 
 
 # create default user dirs
