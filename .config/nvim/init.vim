@@ -44,6 +44,17 @@ let g:tex_flavor = 'latex'
 let g:slime_target = 'tmux'
 let g:webdevicons_enable_nerdtree = 1
 
+" vimtex compiler options
+let g:vimtex_compiler_latexmk = {
+    \ 'options' : [
+    \   '-pdf',
+    \   '-shell-escape',
+    \   '-verbose',
+    \   '-file-line-error',
+    \   '-synctex=1',
+    \   '-interaction=nonstopmode',
+    \ ],
+    \}
 " Mappings
 let mapleader = ';'
 
