@@ -104,7 +104,8 @@ pip3 install jedi \
 		umap \
 		pymc3 \
 		nodejs \
-
+		fcitx-im \ # pinyin input support
+		fcitx-googlepinyin
 
 # clone dotfiles somewhere here
 
