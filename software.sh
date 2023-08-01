@@ -79,7 +79,8 @@ yay -Syu \
 		pyenv \
 		deezer \
 		newsboat \
-		inkscape
+		inkscape \
+		texlive-binextra
 
 
 # create default user dirs
