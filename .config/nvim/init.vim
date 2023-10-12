@@ -47,6 +47,7 @@ let g:vimtex_view_method = 'zathura'
 let g:tex_flavor = 'latex'
 let g:slime_target = 'tmux'
 let g:webdevicons_enable_nerdtree = 1
+let NERDTreeQuitOnOpen=1
 
 lua require('leap').add_default_mappings() 
 
