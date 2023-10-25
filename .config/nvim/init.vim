@@ -5,8 +5,8 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'arcticicestudio/nord-vim'					" nord color scheme
-Plug 'vim-airline/vim-airline'					" sexy status line
-Plug 'vim-airline/vim-airline-themes'			" make the status line even sexier
+Plug 'vim-airline/vim-airline'					" beautify status line
+Plug 'vim-airline/vim-airline-themes'			" beautify the status line even more
 
 Plug 'lervag/vimtex'							" plugin for LaTeX files
 
@@ -16,6 +16,7 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'	" add syntax and colors to nerdtr
 Plug 'Townk/vim-autoclose'						" autoclose brackets
 Plug 'ggandor/leap.nvim'                        " 2-char search pattern leap to screen positions
 
+Plug 'jalvesaq/Nvim-R'                          " support for editing R code
 Plug 'jpalardy/vim-slime'						" send text from editor to REPL
 Plug 'nvim-lua/plenary.nvim'					" dependency for lua-based plugins
 Plug 'nvim-telescope/telescope.nvim', {'tag': '0.1.4' }
