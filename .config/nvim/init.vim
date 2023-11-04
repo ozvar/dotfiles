@@ -13,7 +13,6 @@ Plug 'lervag/vimtex'							" plugin for LaTeX files
 Plug 'preservim/nerdtree'						" file system explorer inside vim
 Plug 'ryanoasis/vim-devicons'					" glyphs for nerdtree
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'	" add syntax and colors to nerdtree
-Plug 'Townk/vim-autoclose'						" autoclose brackets
 Plug 'ggandor/leap.nvim'                        " 2-char search pattern leap to screen positions
 
 Plug 'jalvesaq/Nvim-R'                          " support for editing R code
@@ -66,6 +65,7 @@ let g:vimtex_compiler_latexmk = {
 
 " Mappings
 let mapleader = ';'
+let maplocalleader = ','
 
 :nnoremap <leader>n :NERDTreeFocus<CR>
 :nnoremap <C-n> :NERDTree<CR>
