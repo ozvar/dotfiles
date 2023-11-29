@@ -80,7 +80,8 @@ yay -Syu \
 		deezer \
 		newsboat \
 		inkscape \
-		texlive-binextra
+		texlive-binextra \
+		ripgrep
 
 
 # create default user dirs
