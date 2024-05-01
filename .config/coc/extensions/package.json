@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "coc-tsserver": ">=1.9.15",
+    "coc-pairs": ">=1.4.2",
+    "coc-r-lsp": ">=1.2.1",
+    "coc-pyright": ">=1.1.334"
+  },
+  "disabled": [],
+  "locked": []
+}

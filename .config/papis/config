@@ -1,0 +1,27 @@
+# vim: set ft=ini
+
+[settings]
+default-library = papers
+opentool = zathura 
+editor = nvim
+file-browser = ranger
+add-confirm = True
+add-no-edit = True 
+add-no-open = True 
+add-file-name = {doc[author_list][0][family]}{doc[year]}
+add-folder-name = {doc[author_list][0][family]}{doc[year]}
+ref-format = {doc[author_list][0][family]}{doc[year]}
+add-fetch-citations = False
+search-engine = "https://google.com"
+header-format-file = ~/.config/papis/header
+match-format = {doc[project]}{doc[title]}{doc[author]}{doc[year]}
+bibtex-unicode = True
+use-cache = True
+cache-dir = /home/ozvar/Dropbox/Literature/.cache/papis
+
+[papers]
+dir = /home/ozvar/Dropbox/Literature/ResearchArticles
+
+[books]
+dir = /home/ozvar/Dropbox/Literature/Books 
+
