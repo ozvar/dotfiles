@@ -58,7 +58,7 @@ Xft.rgba: rgb
 Xft.autohint: false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
-XTerm*faceName: Inconsolata Nerd Font:Regular
+XTerm*faceName: Inconsolata Nerd Font Mono:Regular
 XTerm*faceSize: 12
 XTerm*geometry: 80x25
 
@@ -72,7 +72,7 @@ URxvt.lineSpace:         1
 URxvt.depth:             16
 URxvt.saveLines:         10000
 URxvt*geometry:          80x25
-URxvt*terminalName:      rxvt-unicode-256color
+URxvt*terminalName:      rxvt-unicode-truecolor-wide
 URxvt*visualBell:        false
 
 !! Scrollbar
