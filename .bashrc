@@ -13,12 +13,20 @@ PS1='[\u@\h \W]\$ '
 export VISUAL=nvim
 export EDITOR=nvim
 export TERM=rxvt-256color
-export PATH="$HOME/.local/bin:$PATH"
+
+# set up CUDA environment
+export CUDA_HOME=/opt/cuda-11.7
+export CUDA_PATH=$CUDA_HOME
+export PATH=$CUDA_HOME/bin:$PATH
+export LD_LIBRARY_PATH=/opt/cuda-11.7/lib64:/usr/lib:/usr/lib64
 
 # set paths for pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH="$PYENV_ROOT/shims:$PATH"
+
+# path for config files
+export XDG_CONFIG_HOME="$HOME/.config"
 
 # enable powerline in terminal
 powerline-daemon -q
