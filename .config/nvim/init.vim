@@ -15,6 +15,7 @@ Plug 'ryanoasis/vim-devicons'					" glyphs for nerdtree
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'	" add syntax and colors to nerdtree
 Plug 'ggandor/leap.nvim'                        " 2-char search pattern leap to screen positions
 
+Plug 'github/copilot.vim'
 Plug 'jalvesaq/Nvim-R'                          " support for editing R code
 Plug 'jpalardy/vim-slime'						" send text from editor to REPL
 Plug 'nvim-lua/plenary.nvim'					" dependency for lua-based plugins
@@ -65,7 +66,6 @@ let g:vimtex_compiler_latexmk = {
 
 " Mappings
 let mapleader = ';'
-let maplocalleader = ','
 
 :nnoremap <leader>n :NERDTreeFocus<CR>
 :nnoremap <C-n> :NERDTree<CR>
@@ -75,3 +75,4 @@ nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+nnoremap <leader>fw <cmd>Telescope grep_string<cr>
