@@ -1,8 +1,11 @@
 [Added Associations]
 text/x-r-source=nvim.desktop;
-x-scheme-handler/tg=userapp-Telegram Desktop-CFMGX0.desktop;
-application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
+x-scheme-handler/tg=userapp-Telegram Desktop-CFMGX0.desktop;org.telegram.desktop.desktop;
+application/pdf=org.pwmt.zathura.desktop;com.github.xournalpp.xournalpp.desktop;okularApplication_pdf.desktop;
 application/octet-stream=rstudio.desktop;
+text/plain=typora.desktop;
+image/png=google-chrome.desktop;okularApplication_kimgio.desktop;
+application/wps-office.docx=wps-office-wps.desktop;libreoffice-writer.desktop;
 
 [Default Applications]
-x-scheme-handler/tg=userapp-Telegram Desktop-CFMGX0.desktop
+x-scheme-handler/tg=org.telegram.desktop.desktop
